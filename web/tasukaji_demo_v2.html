@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes"/>
+  <title>Tasukaji Chat Demo Site</title>
+  <style>
+    body{
+      height: 100vh;
+      overflow: hidden;
+      -webkit-overflow-scrolling: touch;
+    }
+    pre{
+      overflow: scroll;
+    }
+
+    /* 画面下部ボタンのスタイル */
+    .square_btn {
+      display: inline-block;
+      padding: 0.3em 1em;
+      text-decoration: none;
+      color: #ffffff;
+      border-radius: 3px;
+      transition: .4s;
+      background: #84CB45;
+      text-align: center;
+      width: 315px;
+    }.square_btn:hover {
+      background: #EDF8E4;
+      color: #606060;
+    }
+       
+
+  </style>
+</head>
+<body>
+  <div id="webChatContainer">
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="https://agent.mobilus.me/assets/script/embed/16.0.0/mobi-agent-client-frame-loader.min.js"></script>
+  <script>
+    // チャット画面の読み込み
+    MobiAgentClient.init(
+      'https://agent.mobilus.me', // server url
+      'taskajidemo01', // domainId
+      {
+        targetId:"webChatContainer",
+        useMarkDownSyntax: true,
+        extCSS:'https://10.129.184.35/assets/sample/customStyle_tasukaji_demo_v2.css',
+      }, // options
+      function(){/**callback**/
+        // チャット画面の読み込み後、コールバックでボタンをappendする
+        $('#konnect-container').append('<a href="#" id="btn1" class="square_btn" style="display:none">質問する</a>');
+        $('#btn1').on('click', function(){
+          MobiAgentClient.sendMessage('質問する','')
+        });
+      }
+    );
+
+    // チャット小窓のOpen/Closeでボタンの表示も制御
+    MobiAgentClient.on('openFrame', function(data2){
+      $('#btn1').show();
+      $('#konnect-container').css('bottom', '50px');
+    });
+    MobiAgentClient.on('closeFrame', function(data2){
+      $('#btn1').hide();
+      $('#konnect-container').css('bottom', '0px');
+    });
+
+  </script>
+</body>
+</html>

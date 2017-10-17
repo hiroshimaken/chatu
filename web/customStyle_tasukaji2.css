@@ -1,0 +1,323 @@
+/*
+デフォルトスタイルはすべてインラインスタイルで定義されているため
+custom.cssを使用する場合は!important指定を行ってください。
+描画されるHTML要素には以下のクラス定義が行われていますが、必ずしもすべての要素にclass名が定義してあるわけではないので、
+実際にブラウザで確認を行ってください。
+*/
+
+#draggableHandle {
+    display: none!important;
+}
+iframe#konnect-frame {
+}
+#konnect-container
+{
+}
+img.mbaGuestFrame_content_timeline_list_message_avatar {
+/*	height: 65px!important; */
+}
+
+#mbaGuestFrame_content_timeout {
+    display:none!important;
+}
+#mbaGuestFrame_content_timeline {
+    height: 400px!important;
+    min-height: none!important;
+    max-height: none!important;
+}
+
+.mbaGuestFrame_content_timeline_list_message_time_body_content_urlpreview {
+    border: 3px solid #fff!important;
+    border-radius: 4px!important;
+    font-size: 1.2em!important;
+    font-family: "Yu Gothic Medium", YuGothic!important;
+    margin: 20px 20px 20px 10px!important;
+    padding: 15px!important;
+    display: none!important;
+}
+.mbaGuestFrame_content_timeline_list_message_time_body_content_urlpreview a {
+    color: #337ab7!important;
+}
+.mbaGuestFrame_content_timeline_list_message_time_body_content_urlpreview p {
+    color: gray!important;
+    font-size: 90%!important;
+    font-family: "Yu Gothic Medium", YuGothic!important;
+  }
+.mbaGuestFrame_content_timeline_list_message_time_body_content_urlpreview img {
+    height: 120px!important;
+}
+
+    div#konnect {
+}
+  div.mbaGuestFrame {
+  }
+
+    /*Trigger*/
+    div.mbaGuestFrame_trigger {
+        border-radius: 12px 12px 0 0!important;
+        background: #84CB45!important;
+        background-image: url(http://10.129.184.35/assets/sample/img/taskappogi00.png)!important;
+        background-size: 50px!important;
+        background-repeat: no-repeat!important;
+        /* background: none #056874!important; */
+    }
+    #konnect-container-trigger-overlay {
+        cursor: pointer!important;
+    }    
+      p.mbaGuestFrame_trigger_line {
+        height: 50px!important;
+        line-height: 50px!important;
+      }
+	span.mbaGuestFrame_trigger_line_left {
+    margin-left: 35px!important;
+    font-weight: bold!important;
+	}       
+        span.mbaGuestFrame_trigger_line_left {
+          cursor: text!important;
+          font-family: "Yu Gothic Medium", YuGothic!important;
+          /*font-size: 15px!important; 2017.10.10*/
+        }
+        span.mbaGuestFrame_trigger_line_right {
+          font-family: "Yu Gothic Medium", YuGothic!important;
+        }
+
+    /*Content*/
+    div.mbaGuestFrame_content {
+    	border: none!important;
+      	background-color: #EDF8E4!important;
+    }
+
+      /*Error 発生時*/
+      div.mbaGuestFrame_content_fatalError {
+      }
+        span.mbaGuestFrame_content_fatalError_message {
+        }
+          span.mbaGuestFrame_content_fatalError_message_bull {
+          }
+          span.mbaGuestFrame_content_fatalError_message_text {
+          }
+
+      /*Timeline */
+      div.mbaGuestFrame_content_timeline {
+      	background-color: #EDF8E4!important;
+      }
+        ul.mbaGuestFrame_content_timeline_list {
+        }
+          li.mbaGuestFrame_content_timeline_list_message {
+              border-bottom: none!important;
+          }
+          li.mbaGuestFrame_content_timeline_list_message.you { /*自分の発言の場合*/
+          }
+          li.mbaGuestFrame_content_timeline_list_message.you div.mbaGuestFrame_content_timeline_list_message_body {
+            }
+          li.mbaGuestFrame_content_timeline_list_message.you p.mbaGuestFrame_content_timeline_list_message_body_content_text {
+            background: #84CB45 none repeat scroll 0 0!important;
+            border-radius: 8px!important;
+            margin: 0 20px 0 300px!important;
+            padding: 0.8em 1.1em!important;
+            color: #fff;
+            line-height: 1.6em!important;
+            font-size: 16px!important;
+            font-family: "Yu Gothic Medium", YuGothic!important;
+            }
+
+          li.mbaGuestFrame_content_timeline_list_message.operator, li.mbaGuestFrame_content_timeline_list_message.autoReply {/*ウェルカムメッセージ・オペレーター・ボットの発言の場合*/
+          }
+          li.mbaGuestFrame_content_timeline_list_message.operator div.mbaGuestFrame_content_timeline_list_message_body,
+          li.mbaGuestFrame_content_timeline_list_message.autoReply div.mbaGuestFrame_content_timeline_list_message_body, #mbaGuestFrame_content_timeline_welcomeMessage  {
+			background-image: url(http://10.129.184.35/assets/sample/img/taskappogi02b.gif)!important;  
+			background-repeat: no-repeat!important;  
+			background-position: top left!important;
+			background-size: 80px!important;
+            min-height: 80px!important;
+			margin-left: 10px!important;
+            }
+            #mbaGuestFrame_content_timeline_welcomeMessage  {
+            margin-left: 20px!important;
+            top: 5%!important;
+            }
+		li.mbaGuestFrame_content_timeline_list_message.operator p.mbaGuestFrame_content_timeline_list_message_body_content_text,
+        li.mbaGuestFrame_content_timeline_list_message.autoReply p.mbaGuestFrame_content_timeline_list_message_body_content_text,  #mbaGuestFrame_content_timeline_welcomeMessage span.mbaGuestFrame_content_timeline_welcomeMessage_line
+		 {
+            background: #fff none repeat scroll 0 0!important;
+            border-radius: 8px!important;
+            margin: 0 200px 0 100px!important;
+            padding: 0.9em!important;
+            line-height: 1.6em!important;
+            font-size: 16px!important;
+            font-family: "Yu Gothic Medium", YuGothic!important;
+            }
+		#mbaGuestFrame_content_timeline_welcomeMessage span.mbaGuestFrame_content_timeline_welcomeMessage_line
+		 {
+            line-height: 4.5em!important
+            }                
+            div.mbaGuestFrame_content_timeline_list_message_header {/*メッセージヘッダー*/
+            display: none!important;
+            }
+              span.mbaGuestFrame_content_timeline_list_message_speaker {
+              }
+              span.mbaGuestFrame_content_timeline_list_message_time {
+              }
+            div.mbaGuestFrame_content_timeline_list_message_body {/*メッセージボディー*/
+            }
+              div.mbaGuestFrame_content_timeline_list_message_body_content {
+              	padding: 0.1em 0!important;
+                }
+                p.mbaGuestFrame_content_timeline_list_message_body_content_text { /*テキストの場合*/
+                }
+                div.mbaGuestFrame_content_timeline_list_message_body_content_image { /*画像の場合*/
+                }
+                div.mbaGuestFrame_content_timeline_list_message_body_content_stamp { /*スタンプの場合*/
+                }
+                div.mbaGuestFrame_content_timeline_list_message_body_content_location { /*位置情報の場合*/
+                }
+                div.mbaGuestFrame_content_timeline_list_message_time_body_content_urlpreview { /*url先読み*/
+                }
+                div.mbaGuestFrame_content_timeline_list_message_time_body_content_template { /*テンプレートの場合*/
+                }
+                  div.mbaGuestFrame_content_timeline_list_message_time_body_content_template_slider {
+                    overflow-x: unset!important;
+                  }
+                    div.mbaGuestFrame_content_timeline_list_message_time_body_content_template_item {
+                      display: inline-block!important;
+                      width: 200px!important;
+                      margin: 10px 65px!important;
+                      vertical-align: top!important;
+                      white-space: normal!important;
+                    }
+                      div.mbaGuestFrame_content_timeline_list_message_time_body_content_template_item_cell {
+                        background: #fff none repeat scroll 0 0!important;
+                        border-radius: 8px!important;
+                        padding: 0.9em!important;
+                        line-height: 1.6em!important;
+                        font-size: 14px!important;
+                        font-family: "Yu Gothic Medium", YuGothic!important;            
+                      }
+                      p.mbaGuestFrame_content_timeline_list_message_time_body_content_template_item_cell_title {
+                      }
+                      p.mbaGuestFrame_content_timeline_list_message_time_body_content_template_item_cell_desc {
+                        font-size: 16px!important;
+                      }
+                      div.mbaGuestFrame_content_timeline_list_message_time_body_content_template_item_cell_buttons {
+                      }
+                        a.mbaGuestFrame_content_timeline_list_message_time_body_content_template_item_cell_button {
+                          font-size: 16px!important;
+                        }
+      /*Input*/
+      div.mbaGuestFrame_content_input_wrapper {
+      	background-color: #EDF8E4!important ; 
+      }
+        div.mbaGuestFrame_content_input_wrapper_textarea {
+        	margin: 20px 10px 10px!important;
+        	border: 7px solid #84CB45!important;
+        	height: 95px!important;
+        }
+          div.mbaGuestFrame_content_input_wrapper_textarea > textarea {
+          	width: 80%!important;
+            min-height: 95px!important;
+            font-family: "Yu Gothic Medium", YuGothic!important;
+          }
+          div.mbaGuestFrame_content_input_wrapper_sendButton {
+          }
+            div.mbaGuestFrame_content_input_wrapper_sendButton > button {
+          	width: 100px!important;
+          	height: 50px!important;
+            font-size: 1.6em!important;
+            font-family: "Yu Gothic Medium", YuGothic!important;
+          	color: #fff!important;
+          	background-color: #E28500!important;
+          	border-radius: 5px!important;
+          	letter-spacing: 5px!important;
+          	margin: 5px 5px 0 0!important;
+            }
+
+        div.mbaGuestFrame_content_input_wrapper_initial_nameInput {
+        }
+          div.mbaGuestFrame_content_input_wrapper_initial_nameInput > div {
+          }
+            span.mbaGuestFrame_content_input_wrapper_initial_nameInput_message{
+            }
+            input.mbaGuestFrame_content_input_wrapper_initial_nameInput_input{
+            }
+            button.mbaGuestFrame_content_input_wrapper_initial_nameInput_button{
+            }
+
+        div.mbaGuestFrame_content_input_wrapper_option {
+        }
+          div.mbaGuestFrame_content_input_wrapper_option_nameInput {
+          }
+            label.mbaGuestFrame_content_input_wrapper_option_nameInput_label{
+            }
+            input.mbaGuestFrame_content_input_wrapper_option_nameInput_input{
+            }
+            button.mbaGuestFrame_content_input_wrapper_option_nameInput_button{
+            }
+
+        div.mbaGuestFrame_content_input_wrapper_footer {
+        	display: none!important;
+         }
+
+      div.mbaGuestFrame_content_input_wrapper_guestReview {
+      }
+        div.mbaGuestFrame_content_input_wrapper_guestReview_header{
+        }
+        div.mbaGuestFrame_content_input_wrapper_guestReview_content{
+        }
+        div.mbaGuestFrame_content_input_wrapper_guestReview_rating{
+        }
+        div.mbaGuestFrame_content_input_wrapper_guestReview_footer{
+        }
+          div.mbaGuestFrame_content_input_wrapper_guestReview_buttons > button {
+                border-radius: 5px!important;
+                letter-spacing: 1px!important;
+                line-height: 2em!important;
+          }
+
+
+@media screen and ( max-width:479px )
+{
+iframe#konnect-frame {
+width: 100%!important;
+}
+}
+@media (max-width: 768px) {
+  div.mbaGuestFrame_content_input_wrapper_textarea > textarea {
+    width: calc(100% - 110px)!important;
+  }
+  li.mbaGuestFrame_content_timeline_list_message.operator p.mbaGuestFrame_content_timeline_list_message_body_content_text, li.mbaGuestFrame_content_timeline_list_message.autoReply p.mbaGuestFrame_content_timeline_list_message_body_content_text, #mbaGuestFrame_content_timeline_welcomeMessage span.mbaGuestFrame_content_timeline_welcomeMessage_line{
+    font-family: "Yu Gothic Medium", YuGothic!important;
+    margin: auto auto auto 100px!important;
+		display: inline-block;
+  }
+  li.mbaGuestFrame_content_timeline_list_message.you p.mbaGuestFrame_content_timeline_list_message_body_content_text{
+		margin: auto 0px auto auto!important;
+		display: inline-block;
+  }
+  div.mbaGuestFrame_content_timeline_list_message_body_content{
+		display: flex;
+		justify-content: flex-end;
+  }
+  div.mbaGuestFrame_content_input_wrapper_textarea{
+	  height: auto;
+  }
+}
+button.button3 {
+  /* 文字サイズを1.4emに指定 */
+  font-size: 1.4em;
+
+  /* 文字の太さをboldに指定 */
+  font-weight: bold;
+
+  /* 縦方向に10px、
+   * 横方向に30pxの余白を指定 */
+  padding: 10px 30px;
+
+  /* 背景色を濃い青色に指定 */
+  background-color: #248;
+
+  /* 文字色を白色に指定 */
+  color: #fff;
+
+  /* ボーダーをなくす */
+  border-style: none;
+}
